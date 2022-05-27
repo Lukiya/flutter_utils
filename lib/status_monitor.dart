@@ -12,6 +12,12 @@ class StatusMonitor extends ChangeNotifier {
   int _flags = 0;
   int get flags => _flags;
 
+  StatusMonitor({String? status = "", bool? running, int? flags}) {
+    if (status != null) _status = status;
+    if (running != null) _running = running;
+    if (flags != null) _flags = flags;
+  }
+
   void setStatus(String status, {bool running = true, int flags = 0}) {
     _status = status;
     _running = running;
