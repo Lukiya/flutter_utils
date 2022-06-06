@@ -34,4 +34,13 @@ class StatusMonitor<T> extends ChangeNotifier {
     _flags = flags;
     notifyListeners();
   }
+
+  @override
+  String toString() {
+    if (_value != null) {
+      return _value.toString();
+    }
+
+    return super.toString();
+  }
 }
