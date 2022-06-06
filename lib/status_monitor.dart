@@ -21,7 +21,7 @@ class StatusMonitor<T> extends ChangeNotifier {
     }
   }
 
-  StatusMonitor({String? status = "", bool? running, int? flags, Function<T>()? defaultValue}) {
+  StatusMonitor({String? status = "", bool? running, int? flags, T Function()? defaultValue}) {
     if (status != null) _status = status;
     if (running != null) _running = running;
     if (flags != null) _flags = flags;
