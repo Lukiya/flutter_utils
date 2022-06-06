@@ -2,7 +2,7 @@ library dreamvat;
 
 import 'package:flutter/foundation.dart';
 
-class StatusMonitor extends ChangeNotifier {
+class StatusMonitor<T> extends ChangeNotifier {
   String _status = "";
   String get status => _status;
 
@@ -12,10 +12,20 @@ class StatusMonitor extends ChangeNotifier {
   int _flags = 0;
   int get flags => _flags;
 
-  StatusMonitor({String? status = "", bool? running, int? flags}) {
+  late T _value;
+  T get value => _value;
+  set value(T v) {
+    if (_value != v) {
+      _value = v;
+      notifyListeners();
+    }
+  }
+
+  StatusMonitor({String? status = "", bool? running, int? flags, Function<T>()? defaultValue}) {
     if (status != null) _status = status;
     if (running != null) _running = running;
     if (flags != null) _flags = flags;
+    if (defaultValue != null) _value = defaultValue();
   }
 
   void setStatus(String status, {bool running = true, int flags = 0}) {
