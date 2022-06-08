@@ -1,6 +1,4 @@
-library dreamvat;
-
-import 'package:flutter/foundation.dart';
+part of 'dreamvat.dart';
 
 class StatusMonitor<T> extends ChangeNotifier {
   String _status = "";
