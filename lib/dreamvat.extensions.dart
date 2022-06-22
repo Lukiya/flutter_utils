@@ -1,21 +1,15 @@
 part of 'dreamvat.dart';
 
-extension ObjectExtentions on Object? {
+extension StringExtentions on String? {
   bool isMissing() {
     if (this == null) return true;
 
-    if (this is String) {}
-
-    return false;
+    return this!.isEmpty;
   }
 
   bool isPresent() {
     if (this == null) return false;
 
-    if (this is String) {
-      return toString().isNotEmpty;
-    }
-
-    return true;
+    return this!.isNotEmpty;
   }
 }
