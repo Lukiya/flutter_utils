@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:dreamvat/dreamvat.dart';
 
 class FLogsListView extends StatefulWidget {
-  const FLogsListView({Key? key}) : super(key: key);
+  final Widget? title;
+  const FLogsListView({this.title, Key? key}) : super(key: key);
 
   @override
   FLogsListState createState() => FLogsListState();
@@ -13,7 +14,11 @@ class FLogsListState extends State<FLogsListView> {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder<List<Log>>(
-      future: FLog.getAllLogs(),
+      future: Future<List<Log>>(() async {
+        final r = await FLog.getAllLogs();
+        r.sort((a, b) => (b.timeInMillis ?? 0) - (a.timeInMillis ?? 0));
+        return r;
+      }),
       builder: (context, snapshot) {
         if (snapshot.connectionState != ConnectionState.done || !snapshot.hasData) {
           return const Center(child: CircularProgressIndicator());
@@ -23,7 +28,7 @@ class FLogsListState extends State<FLogsListView> {
 
         return Scaffold(
           appBar: AppBar(
-            title: const Text("日志"),
+            title: widget.title,
             actions: [
               IconButton(
                 icon: const Icon(Icons.delete),
