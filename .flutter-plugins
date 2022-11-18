@@ -1,16 +1,20 @@
 # This is a generated file; do not edit or check into version control.
-flutter_inappwebview=C:\\Users\\Lukiya\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\flutter_inappwebview-5.4.3+7\\
-flutter_secure_storage=C:\\Users\\Lukiya\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\flutter_secure_storage-5.1.0\\
+flutter_inappwebview=C:\\Users\\Lukiya\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\flutter_inappwebview-5.7.1+2\\
+flutter_secure_storage=C:\\Users\\Lukiya\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\flutter_secure_storage-6.0.0\\
 flutter_secure_storage_linux=C:\\Users\\Lukiya\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\flutter_secure_storage_linux-1.1.1\\
 flutter_secure_storage_macos=C:\\Users\\Lukiya\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\flutter_secure_storage_macos-1.1.1\\
 flutter_secure_storage_web=C:\\Users\\Lukiya\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\flutter_secure_storage_web-1.0.2\\
 flutter_secure_storage_windows=C:\\Users\\Lukiya\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\flutter_secure_storage_windows-1.1.2\\
 path_provider=C:\\Users\\Lukiya\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\path_provider-2.0.11\\
-path_provider_android=C:\\Users\\Lukiya\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\path_provider_android-2.0.18\\
+path_provider_android=C:\\Users\\Lukiya\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\path_provider_android-2.0.21\\
 path_provider_ios=C:\\Users\\Lukiya\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\path_provider_ios-2.0.11\\
 path_provider_linux=C:\\Users\\Lukiya\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\path_provider_linux-2.1.7\\
 path_provider_macos=C:\\Users\\Lukiya\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\path_provider_macos-2.0.6\\
-path_provider_windows=C:\\Users\\Lukiya\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\path_provider_windows-2.1.2\\
-webview_flutter=C:\\Users\\Lukiya\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\webview_flutter-2.8.0\\
-webview_flutter_android=C:\\Users\\Lukiya\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\webview_flutter_android-2.9.3\\
-webview_flutter_wkwebview=C:\\Users\\Lukiya\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\webview_flutter_wkwebview-2.9.3\\
+path_provider_windows=C:\\Users\\Lukiya\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\path_provider_windows-2.1.3\\
+shared_preferences=C:\\Users\\Lukiya\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\shared_preferences-2.0.15\\
+shared_preferences_android=C:\\Users\\Lukiya\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\shared_preferences_android-2.0.14\\
+shared_preferences_ios=C:\\Users\\Lukiya\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\shared_preferences_ios-2.1.1\\
+shared_preferences_linux=C:\\Users\\Lukiya\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\shared_preferences_linux-2.1.1\\
+shared_preferences_macos=C:\\Users\\Lukiya\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\shared_preferences_macos-2.0.4\\
+shared_preferences_web=C:\\Users\\Lukiya\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\shared_preferences_web-2.0.4\\
+shared_preferences_windows=C:\\Users\\Lukiya\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dartlang.org\\shared_preferences_windows-2.1.1\\

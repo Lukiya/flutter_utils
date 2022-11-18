@@ -1,6 +1,6 @@
 name: dreamvat
 description: An utils package project.
-version: 0.0.20
+version: 0.0.21
 homepage: https://github.com/Lukiya/flutter_utils
 
 environment:
@@ -8,13 +8,13 @@ environment:
   flutter: ">=1.17.0"
 
 dependencies:
-  archive: ^3.3.1
+  archive: ^3.3.4
   f_logs: ^2.0.1
   flutter:
     sdk: flutter
-  flutter_onedrive: ^1.2.0
+  flutter_onedrive: ^1.4.0
   flutter_slidable: ^2.0.0
-  uuid: ^3.0.6
+  uuid: ^3.0.7
 
 dev_dependencies:
   flutter_test:
