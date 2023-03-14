@@ -42,4 +42,20 @@ class Dreamvat {
 
   // 当前UTC时间毫秒
   static int utcNowMS() => DateTime.now().toUtc().millisecondsSinceEpoch;
+
+  /// 计算Hash
+  static int fastHash(String string) {
+    var hash = 0xcbf29ce484222325;
+
+    var i = 0;
+    while (i < string.length) {
+      final codeUnit = string.codeUnitAt(i++);
+      hash ^= codeUnit >> 8;
+      hash *= 0x100000001b3;
+      hash ^= codeUnit & 0xFF;
+      hash *= 0x100000001b3;
+    }
+
+    return hash;
+  }
 }
