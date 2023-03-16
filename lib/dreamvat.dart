@@ -33,6 +33,7 @@ class Dreamvat {
   }
 
   // 生成Guid
+  static const msgSuccess = "";
   static const emptyGuid = "00000000000000000000000000000000";
   static const _uuid = Uuid();
   static String newGuid() {
