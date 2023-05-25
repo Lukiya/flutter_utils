@@ -1,8 +1,9 @@
 import 'dart:io';
-import 'dart:typed_data';
+// import 'dart:typed_data';
 
 import 'package:archive/archive_io.dart';
-import 'package:dreamvat/dreamvat.dart';
+import 'package:flutter/foundation.dart';
+// import 'package:dreamvat/dreamvat.dart';
 
 Future<Uint8List> compress(Map<String, dynamic> args) async {
   final srcPath = args["srcPath"];
@@ -19,7 +20,8 @@ Future<Uint8List> compress(Map<String, dynamic> args) async {
     await zipFile.delete(); // 删除zip文件
     return r;
   } catch (err) {
-    Logger.error("Compress db failed", error: err, stackTrace: StackTrace.current);
+    // Logger.error("Compress db failed", error: err, stackTrace: StackTrace.current);
+    debugPrint("Compress db failed, $err, ${StackTrace.current}");
   }
 
   return Uint8List(0);
@@ -36,6 +38,7 @@ Future<void> decompress(Map<String, dynamic> args) async {
     final targetFile = File(tarPath);
     await targetFile.writeAsBytes(zipFile.content); // 写入数据库文件
   } catch (err) {
-    Logger.error("Decompress db failed", error: err, stackTrace: StackTrace.current);
+    debugPrint("Compress db failed, $err, ${StackTrace.current}");
+    // Logger.error("Decompress db failed", error: err, stackTrace: StackTrace.current);
   }
 }
