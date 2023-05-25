@@ -11,8 +11,8 @@ dependencies:
   archive: ^3.3.4
   flutter:
     sdk: flutter
-  flutter_onedrive: ^1.4.0
-  flutter_slidable: ^3.0.0
+  flutter_onedrive: '>=1.4.0'
+  flutter_slidable: '>=2.0.0'
   uuid: ^3.0.7
 
 dev_dependencies:
