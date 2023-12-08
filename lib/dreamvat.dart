@@ -2,7 +2,7 @@ library dreamvat;
 
 import 'package:flutter/foundation.dart';
 // import 'package:f_logs/f_logs.dart';
-import 'package:uuid/uuid.dart';
+// import 'package:uuid/uuid.dart';
 
 part 'dreamvat.extensions.dart';
 part 'dreamvat.status_monitor.dart';
@@ -35,11 +35,11 @@ class Dreamvat {
   // 生成Guid
   static const msgSuccess = "";
   static const emptyGuid = "00000000000000000000000000000000";
-  static const _uuid = Uuid();
-  static String newGuid() {
-    // return _uuid.v5(Uuid.NAMESPACE_URL, _uuidNS).replaceAll("-", "");
-    return _uuid.v4().replaceAll("-", "");
-  }
+  // static const _uuid = Uuid();
+  // static String newGuid() {
+  //   // return _uuid.v5(Uuid.NAMESPACE_URL, _uuidNS).replaceAll("-", "");
+  //   return _uuid.v4().replaceAll("-", "");
+  // }
 
   // 当前UTC时间毫秒
   static int utcNowMS() => DateTime.now().toUtc().millisecondsSinceEpoch;
